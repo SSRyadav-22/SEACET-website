@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.E.A College of Engineering and Technology</title>
+    <link rel="stylesheet" href="css/style.css?v=3"> <!-- Updated cache buster -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">S.E.A.C.E.T</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="placements.html">Placements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section with Slideshow -->
+        <section class="hero">
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-content">
+                <h1>Welcome to S.E.A College of Engineering and Technology</h1>
+                <p>Empowering Future Engineers with Excellence and Innovation</p>
+                <a href="admissions.html" class="btn">Apply Now</a>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="cards">
+            <h2>Why Choose S.E.A.C.E.T?</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Top Courses</h3>
+                    <p>Explore cutting-edge programs in CSE, AIML, IoT, and more.</p>
+                    <a href="courses.html" class="card-btn">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Strong Placements</h3>
+                    <p>Collaborations with top companies like TCS and Infosys.</p>
+                    <a href="placements.html" class="card-btn">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Modern Campus</h3>
+                    <p>State-of-the-art labs, library, and hostel facilities.</p>
+                    <a href="about.html" class="card-btn">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Easy Admissions</h3>
+                    <p>Apply through KCET or COMEDK for 2025 intake.</p>
+                    <a href="admissions.html" class="card-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot Widget Button -->
+        <button class="chatbot-widget" onclick="toggleChatbot()">💬</button>
+
+        <!-- Chatbot Section (Hidden by Default) -->
+        <div class="chatbot" id="chatbot">
+            <div class="chatbot-header">
+                <span>SEACET Assistant</span>
+                <button class="chatbot-close" onclick="closeChatbot()">✕</button>
+            </div>
+            <div class="chatbot-body" id="chatbotBody"></div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your query...">
+                <button onclick="sendMessage()">Send</button>
+                <div id="wordPrediction" onclick="selectPredictedWord()"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2025 S.E.A College of Engineering and Technology. All rights reserved.</p>
+    </footer>
+
+    <script src="js/chatbot.js"></script>
+    <script src="js/student.js"></script>
+</body>
+</html>

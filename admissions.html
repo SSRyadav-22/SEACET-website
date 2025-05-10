@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - S.E.A College</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="logo">S.E.A.C.E.T</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="placements.html">Placements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-content">
+                <h1>Admissions 2025</h1>
+                <p>Join our vibrant academic community</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <h1>Admissions 2025</h1>
+            <p>Admissions to B.Tech programs are through KCET or COMEDK UGET. Minimum eligibility: 45% in 12th (PCM).</p>
+            <h3>Entrance Exam Cutoffs (Approximate)</h3>
+            <ul>
+                <li>KCET: 50,000 - 65,000 rank for CSE, AIML, IoT</li>
+                <li>KCET: 60,000 - 80,000 rank for Mech, ECE, ISE</li>
+                <li>COMEDK: 40,000 - 60,000 rank for all branches</li>
+            </ul>
+            <p>Apply online at <a href="http://www.seaedu.ac.in">www.seaedu.ac.in</a> or visit the campus.</p>
+        </section>
+
+        <!-- Chatbot Widget Button -->
+        <button class="chatbot-widget" onclick="toggleChatbot()">💬</button>
+
+        <!-- Chatbot Section (Hidden by Default) -->
+        <div class="chatbot" id="chatbot">
+            <div class="chatbot-header">SEACET Assistant</div>
+            <div class="chatbot-body" id="chatbotBody"></div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your query...">
+                <button onclick="sendMessage()">Send</button>
+                <div id="wordPrediction" onclick="selectPredictedWord()"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 S.E.A College of Engineering and Technology. All rights reserved.</p>
+    </footer>
+
+    <script src="js/chatbot.js"></script>
+    <script src="js/student.js"></script>
+</body>
+</html>
